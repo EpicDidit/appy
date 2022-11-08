@@ -27,15 +27,15 @@ class _HomePageState extends State<HomePage> {
   static const List<Widget> _myAppBarTitle = <Widget>[
     Text(
       'Home',
-      style: TextStyle(color: Colors.white),
+      style: TextStyle(color: Colors.black),
     ),
     Text(
       'Favorite',
-      style: TextStyle(color: Colors.white),
+      style: TextStyle(color: Colors.black),
     ),
     Text(
       'Profile',
-      style: TextStyle(color: Colors.white),
+      style: TextStyle(color: Colors.black),
     ),
   ];
 
@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
             ),
           )
         ],
-        backgroundColor: Colors.black87,
+        backgroundColor: Color.fromARGB(255, 159, 202, 238),
         centerTitle: true,
         title: _myAppBarTitle[_selectedIndex],
       ),

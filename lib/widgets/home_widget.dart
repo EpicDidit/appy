@@ -1,3 +1,6 @@
+import 'dart:ui';
+
+import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class Homewidget extends StatelessWidget {
@@ -5,10 +8,10 @@ class Homewidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const SafeArea(
-      child: Center(
-        child: Text('Home'),
-      ),
+    return ListView.builder(
+      itemBuilder: ((context, index) {
+        return ListTile();
+      }),
     );
   }
 }
