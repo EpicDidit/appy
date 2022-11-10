@@ -1,6 +1,27 @@
-import 'dart:ui';
-
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'
+    show
+        AssetImage,
+        BorderRadius,
+        BoxDecoration,
+        BuildContext,
+        Center,
+        Color,
+        Colors,
+        Column,
+        Container,
+        DecorationImage,
+        EdgeInsets,
+        ElevatedButton,
+        ListTile,
+        Padding,
+        Radius,
+        SafeArea,
+        Scaffold,
+        SizedBox,
+        StatelessWidget,
+        Text,
+        TextStyle,
+        Widget;
 //import 'package:flutter/widgets.dart';
 
 class ProfileWidget extends StatelessWidget {
@@ -8,9 +29,7 @@ class ProfileWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 159, 202, 238),
-      body: Center(
+    return Center(
         child: SafeArea(
           child: Column(
             children: [
@@ -56,9 +75,9 @@ class ProfileWidget extends StatelessWidget {
                 ),
                 child: Column(
                   children: [
-                    ListTile(
-                      leading: Container(),
-                    )
+                    // ListTile(
+                    //   leading: Container(),
+                    // )
                   ],
                 ),
               ),
@@ -108,7 +127,7 @@ class ProfileWidget extends StatelessWidget {
           //   ),
           // ),
         ),
-      ),
+      
     );
   }
 }

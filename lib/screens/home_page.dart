@@ -42,22 +42,23 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: const Color.fromARGB(255, 159, 202, 238),
       appBar: AppBar(
         actions: const [
           Padding(
             padding: EdgeInsets.all(8.0),
             child: Icon(
               Icons.favorite_rounded,
-              color: Colors.red,
+              color: Colors.white,
             ),
           )
         ],
-        backgroundColor: Color.fromARGB(255, 159, 202, 238),
+        backgroundColor: const Color.fromARGB(255, 159, 202, 238),
         centerTitle: true,
         title: _myAppBarTitle[_selectedIndex],
       ),
       drawer: const Drawer(
-        backgroundColor: Colors.redAccent,
+        backgroundColor: Colors.white,
       ),
       body: _myWidgets[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
